@@ -2,10 +2,10 @@
     
     
     function isRedFruit( fruit: string ): boolean {
-        const redFruits: string[] = ['manzana', 'cereza', 'ciruela'];
+        const redFruits: string[] = ['apple', 'cherry', 'plum'];
         return redFruits.includes(fruit) ? true : false;
 
-        /* if ( fruit === 'manzana' || fruit === 'cereza' || fruit === 'ciruela' ) {
+        /* if ( fruit === 'apple' || fruit === 'cherry' || fruit === 'plum' ) {
             return true;
         } else {
             return false;
@@ -19,9 +19,9 @@
     function getFruitsByColor( color: FruitColor ): string[] {
 
         const fruitByColor: {[key: string]: string[]} = {
-            red:    ["manzana", "fresa"],
-            yellow: ['banana', 'piña'],
-            purple: ['uvas', 'moras']
+            red:    ["apple", "strawberry"],
+            yellow: ['banana', 'pineapple'],
+            purple: ['grape', 'mulberry']
         };
 
         if (!Object.keys( fruitByColor).includes(color)) {
@@ -30,11 +30,11 @@
         return fruitByColor[color];
 
         /* if ( color === 'red' ) {
-            return ['manzana','fresa'];
+            return ['apple','strawberry'];
         } else if ( color === 'yellow') {
-            return ['piña','banana'];
+            return ['pineapple','banana'];
         } else if ( color === 'purple') {
-            return ['moras','uvas']
+            return ['mulberry','grape']
         } else {
             throw Error('the color must be: red, yellow, purple');
         } */
@@ -81,13 +81,13 @@
 
 
     // isRedFruit
-    console.log({ isRedFruit: isRedFruit('cereza'), fruit: 'cereza' }); // true
-    console.log({ isRedFruit: isRedFruit('piña'), fruit: 'piña' }); // false
+    console.log({ isRedFruit: isRedFruit('cherry'), fruit: 'cherry' }); // true
+    console.log({ isRedFruit: isRedFruit('pineapple'), fruit: 'pineapple' }); // false
 
     //getFruitsByColor
-    console.log({ redFruits: getFruitsByColor('red') }); // ['manzana', 'fresa']
-    console.log({ yellowFruits: getFruitsByColor('yellow') }); // ['piña', 'banana']
-    console.log({ purpleFruits: getFruitsByColor('purple') }); // ['moras', 'uvas']
+    console.log({ redFruits: getFruitsByColor('red') }); // ['apple', 'strawberry']
+    console.log({ yellowFruits: getFruitsByColor('yellow') }); // ['pineapple', 'banana']
+    console.log({ purpleFruits: getFruitsByColor('purple') }); // ['mulberry', 'grape']
     //console.log({ pinkFruits: getFruitsByColor('pink') }); // Error: the color must be: red, yellow, purple
 
     // workingSteps

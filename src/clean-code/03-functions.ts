@@ -24,7 +24,7 @@ export interface Movie {
     }
 
     function createActor( fullName: string, birthDate: Date ): boolean {
-        // tarea asincrona para verificar nombre
+        // async task
         // ..
         // ..
         if ( fullName === 'fernando' ) return false;

@@ -1,6 +1,6 @@
 (() => {
-  //* Aplicar el principio de responsabilidad única
-  //* Priorizar la composición frente a la herencia
+  // Applying the principle of sole responsibility
+  // Prioritize composition over inheritance (Avoid extends)
 
   type HtmlType = "input" | "select" | "textarea" | "radio";
 
@@ -21,8 +21,6 @@
     removeValue() {}
   }
 
-  //? Idea para la nueva clase InputElement
-
   class InputElement {
     public html: HtmlElement;
     public attributes: InputAttributes;
@@ -35,7 +33,7 @@
     }
   }
 
-  const nameField = new InputElement("Fernando", "Enter first name", "txtName");
+  const nameField = new InputElement("Kevin", "Enter first name", "txtName");
 
   console.log(nameField);
 })();

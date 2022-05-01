@@ -1,18 +1,19 @@
-# Proyecto para practicar
+# Project SOLID principes and Clean Code
 
-Este es un proyecto de Vanilla TypeScript en Vite, para trabajar los ejercicios del curso sobre Principios SOLID y CleanCode.
+This is an Vanilla Typescript project on Vite for practice the exercises of the course SOLID principes and Clean Code.
 
-Clonar o descargar el proyecto y luego:
+Clone or downlaod the project
 
 ```
 yarn install
-ó
-npm install
 ```
 
-Para ejecutar el proyecto, simplemente ejecuten
+Run the project
 ```
 yarn dev
-ó
-npm run dev
+```
+
+Open on the brownser
+```
+http://localhost:3000
 ```

@@ -1,5 +1,3 @@
-//import axios from 'axios';
-
 import { HttpClient } from "./02-open-close-c";
 
 export class TodoService { 

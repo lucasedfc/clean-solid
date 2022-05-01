@@ -6,25 +6,23 @@
 
   class ProductService {
     getProduct(id: number) {
-      console.log("Producto: ", {
+      console.log("Product: ", {
         id,
-        name: "OLED Tv",
+        name: "OLED TV",
       });
     }
 
     saveProduct(product: Product) {
-      console.log("Guardando en base de datos", product);
+      console.log("Saving on database", product);
     }
   }
 
   class Mailer {
     sendEmail(emailList: string[], template: "to-clients" | "to-admins") {
-      console.log("Enviando correo a los clientes", template, emailList);
+      console.log("Sending email to clients", template, emailList);
     }
   }
 
-  // Usualmente, esto es una clase para controlar la vista que es desplegada al usuario
-  // Recuerden que podemos tener muchas vistas que realicen este mismo trabajo.
   class ProductBloc {
     private productService: ProductService;
     private mailer: Mailer;
@@ -34,12 +32,10 @@
       this.mailer = mailer;
     }
     loadProduct(id: number) {
-      // Realiza un proceso para obtener el producto y retornarlo
       return this.productService.getProduct(id);
     }
 
     saveProduct(product: Product) {
-      // Realiza una petición para salvar en base de datos
       return this.productService.saveProduct(product);
     }
 
@@ -52,7 +48,7 @@
     private itemsInCart: Object[] = [];
 
     addToCart(productId: number) {
-      console.log("Agregando al carrito ", productId);
+      console.log("Adding to cart ", productId);
     }
   }
 

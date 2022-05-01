@@ -1,6 +1,6 @@
 (() => {
-  // Aplicando el principio de responsabilidad única
-  // Prioriza la composición frente a la herencia
+  // Applying the principle of sole responsibility
+  // Prioritize composition over inheritance (Avoid extends)
 
   type Gender = "M" | "F";
 

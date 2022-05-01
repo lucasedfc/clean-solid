@@ -2,7 +2,7 @@
 
 This is an Vanilla Typescript project on Vite for practice the exercises of the course SOLID principes and Clean Code.
 
-Clone or downlaod the project
+Clone or download the project
 
 ```
 yarn install
